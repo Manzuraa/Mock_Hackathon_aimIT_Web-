@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lybas Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/Group 6.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About us</a>
+          <div class="logo">
+            <img src="/images/Group 6.png" alt="Logo" />
+          </div>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="resplogo">
+          <img src="/images/Group 6.png" alt="Logo" />
+          <img src="/images/menu 1.png" alt="" id="menu" onclick="showcontent()"/>
+        </div>
+        <div class="dropdowncontent" id="show">
+          <a href="index.html" class="active"onclick="hidecontent()">Home</a>
+          <a href="about.html"onclick="hidecontent()">About us</a>
+          <a href="testimonials.html"onclick="hidecontent()">Testimonials</a>
+          <a href="contact.html"onclick="hidecontent()">Contact</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="title">
+        <p>Welcome to <span>Lybas</span></p>
+      </div>
+      <div class="container">
+        <div class="main">
+          <div class="clients">
+            <div class="button">
+              <a href="clientreg.html">Clients</a>
+            </div>
+          </div>
+          <div class="tailors">
+            <div class="button">
+              <a href="">Tailors</a>
+            </div>
+          </div>
+        </div>
+        <div class="other">
+          <div class="button">
+            <a href="">Other Suppliers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>© Copyright 2023 | All rights reserved.</p>
+        </div>
+        <div class="icons">
+          <a href=""><img src="images/instagram.png" alt="Instagram" /></a>
+          <a href=""><img src="/images/whatsapp.png" alt="Whatsapp" /></a>
+          <a href=""><img src="/images/facebook.png" alt="Facebook" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+        let menu = document.getElementById("menu")
+        let show = document.getElementById("show")
+        function showcontent() {
+            show.style.display="block"
+        }
+        function hidecontent() {
+            show.style.display="none"
+        }
+    </script>
+  </body>
 </html>

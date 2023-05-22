@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@1,200;1,500&family=Rubik:ital,wght@0,400;1,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+}
+body {
+  background-image: url(/images/Rectangle\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 100%;
+  background-image: none;
+  padding: 70px 0;
+}
+header .container {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+header .container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+header nav a.active {
+  text-decoration: underline;
+}
+header .container .resplogo, 
+header .container .dropdowncontent {
+  display: none;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 23px 0;
+    }
+  header .container {
+    width: 90%;
+    padding-left: 0%;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .resplogo {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropdowncontent {
+    width: 166px;
+    height: 195px;
+    background: #ffffff;
+    padding: 35px 25px;
+    position: absolute;
+    right: 25px;
+    top: 70px;
+  }
+  .dropdowncontent a {
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 19px;
+  }
+}
+
+section {
+  width: 100%;
+}
+section .title {
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+section .title span {
+  font-family: "Birds of Paradise  Personal use";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+section .container {
+  width: 60%;
+  margin: 0 auto;
+}
+section .container .main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 36px 0 88px;
+}
+section .container .main .clients,
+section .container .main .tailors,
+section .container .other {
+  width: 432px;
+  height: 253px;
+  position: relative;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+}
+section .container .main .clients {
+  background-image: url(/images/positive-woman-red-beret-trendy-blouse-smiles-holds-bags-from-clothing-stores\ 1.png);
+}
+section .container .main .tailors {
+  background-image: url(/images/brunette-seamstress-apron-measuring-beautiful-fabric-black-dummy-workshop\ 1.png);
+}
+
+section .container .other {
+  background-image: url(/images/brown-blue-color-palette-tailoring-leather-tissues-catalog\ 1.png);
+  margin: 0 auto;
+}
+section img {
+  max-width: 100%;
+}
+.button {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button a {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #000000;
+}
+@media (max-width: 600px) {
+section .container {
+    width: 90%;
+}
+section .container .main {
+    flex-direction: column;
+    row-gap: 34px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+}
+section .title {
+    width: 130px;
+}
+section .container .main .clients,
+section .container .main .tailors,
+section .container .other {
+    height: 169px;
+    width: 250px;   
+}
+}
+
+footer {
+    width: 100%;
+    background: #ffffff;
+  margin-top: 65px;
+}
+footer .container {
+  padding: 25px 0;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+footer .container .icons {
+  display: flex;
+  align-items: center;
+}
+footer .container .icons a {
+  margin-left: 51px;
+}
+@media (max-width: 600px) {
+    footer .container {
+        width: 80%;
+    }
+    footer .container .icons a {
+        margin-left: 21px;
+    }
+}
+@font-face {
+    font-family: "Birds of Paradise  Personal use"; 
+    src: url("/fonts/Birds\ of\ Paradise\ +\ PERSONAL\ USE\ ONLY.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 

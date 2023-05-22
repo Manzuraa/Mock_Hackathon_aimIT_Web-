@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@1,200;1,500&family=Rubik:ital,wght@0,400;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@1,200;1,500&family=Rubik:ital,wght@0,400;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,400;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,400;1,400;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+}
+body {
+  background: #f5f5f5;
+}
+header {
+  width: 100%;
+  padding: 27px 0;
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu nav a {
+  margin-left: 50px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+header nav a.active {
+  text-decoration: underline;
+}
+section.about {
+  width: 100%;
+}
+.about .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.about .container .content,
+.about .container .image {
+  width: 50%;
+}
+
+.title h3 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #de1b41;
+  margin-bottom: 10px;
+}
+.title h2 {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  color: #232323;
+}
+.about .container .content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+  width: 541.62px;
+}
+.about .container .image img {
+  width: 100%;
+  border-radius: 25px;
+}
+section.services {
+  width: 90%;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.services .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  width: 889px;
+}
+.services p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #525252;
+}
+.services .container {
+  width: 60%;
+  margin: 0 auto;
+}
+.services .container .main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 36px 0 88px;
+}
+.services .container .main .clients,
+.services .container .main .tailors,
+.services .container .other {
+  width: 432px;
+  height: 253px;
+  position: relative;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+}
+.services .container .main .clients {
+  background-image: url(/images/positive-woman-red-beret-trendy-blouse-smiles-holds-bags-from-clothing-stores\ 1.png);
+}
+.services .container .main .tailors {
+  background-image: url(/images/brunette-seamstress-apron-measuring-beautiful-fabric-black-dummy-workshop\ 1.png);
+}
+
+.services .container .other {
+  background-image: url(/images/brown-blue-color-palette-tailoring-leather-tissues-catalog\ 1.png);
+  margin: 0 auto;
+}
+.services img {
+  max-width: 100%;
+}
+.button {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button a {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #000000;
+}
+section.advantages {
+  width: 100%;
+  padding: 100px 0;
+}
+.advantages .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages .container .box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages .container .box h2 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #232323;
+  margin-top: 23px;
+  margin-bottom: 9px;
+}
+.advantages .container .box p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #232323;
+  width: 337px;
+}
+section.faq {
+  width: 100%;
+}
+.faq .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 100px;
+  background: #ffffff;
+  box-shadow: 15px 15px 25px 5px rgba(255, 165, 165, 0.3);
+}
+.faq .container .name h2 {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #333333;
+  margin-bottom: 100px;
+}
+.faq .container .content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq .container .box {
+  height: 97px;
+  background: #ffffff;
+  border: 1px solid #c3d1e2;
+  margin-bottom: 20px;
+  background-image: url(/images/faq\ icon.png);
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+  padding-left: 90px;
+  padding-top: 40px;
+}
+.faq .container .box p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  height: 182px;
+  background: #ffffff;
+  border: 1px solid #c3d1e2;
+  padding: 12px 16px;
+  position: inherit;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+footer {
+  width: 100%;
+  background: #ffe5ec;
+}
+footer .icons {
+  position: relative;
+  left: 1000px;
+  top: -50px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 140px 0;
+}
+footer .container .logo,
+footer .container .link, footer .container .customer {
+    width: 30%;
+}
+
+
+footer .container .logo {
+  display: block;
+}
+footer .container .logo p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+footer .container h2 {
+  font-family: "Noto Serif";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+footer .container a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  color: #000000;
+  display: block;
+}
+footer .container .customer {
+    align-items: center;
+}
+footer .container .customer .phone, 
+footer .container .customer .email {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+footer .container .customer .phone p, 
+footer .container .customer .email p {
+    display: inline-flex;
+   text-align: center;
+   margin: 10px;
+
+}
